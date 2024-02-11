@@ -1,0 +1,107 @@
+﻿<div class="container">
+
+    <div class="subscriptionGroups">
+        <div class="card mb-3">
+            <div class="card-header">
+                Subscription List
+            </div>
+            <div class="card-body">
+                <label id="lbl_subscribeJoined"></label>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                Subscribe
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-primary" id="btn_subscribePrimary">Primary</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-secondary" id="btn_subscribeSecondary">Secondary</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-danger" id="btn_subscribeDanger">Danger</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+               Unsubscribe
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-primary" id="btn_unSubscribePrimary" style="display:none">Primary</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-secondary" id="btn_unSubscribeSecondary" style="display:none">Secondary</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-danger" id="btn_unSubscribeDanger" style="display:none">Danger</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                Triggers
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-primary" id="btn_trSubscribePrimary">Primary</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-secondary" id="btn_trSubscribeSecondary">Secondary</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-danger" id="btn_trSubscribeDanger">Danger</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card my-3">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    Alahly
+                    <span id="alahlyCount"></span>
+                </div>
+                <div class="col-md-4">
+                    Elzamalek
+                    <span id="elzamalekCount"></span>
+                </div>
+                <div class="col-md-4">
+                    Pyramids
+                    <span id="pyramidsCount"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">Total Views:</div>
+        <div class="col-md-4">
+            <span id="totalViewsCount"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">Total Connections/Users:</div>
+        <div class="col-md-4">
+            <span id="totalUsersCount"></span>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/signalr.js"></script>
+<script src="~/js/userCount.js"></script>
+<script src="~/js/voteHub.js"></script>
+<script src="~/js/subscriptionGroup.js"></script>
