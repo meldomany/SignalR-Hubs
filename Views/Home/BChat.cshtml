@@ -1,0 +1,40 @@
+﻿<div class="container">
+    <div class="chat-form">
+        <div class="row mb-3">
+            <div class="col-md-3">
+                <label>Sender</label>
+            </div>
+            <div class="col-md-9">
+                <input class="form-control" value="@User.Identity.Name" id="senderField" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-3">
+                <label>Reciever</label>
+            </div>
+            <div class="col-md-9">
+                <input class="form-control" id="recieverField" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-3">
+                <label>Message</label>
+            </div>
+            <div class="col-md-9">
+                <input class="form-control" id="messageField" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-3">
+                <button class="btn btn-outline-info" id="sendMessageBtn">Send Message</button>
+            </div>
+        </div>
+    </div>
+    <div class="chat-messages my-5" style="border: 1px solid #eee; height: 50vh">
+        <ul id="messageList">
+        </ul>
+    </div>
+</div>
+
+<script src="~/js/signalr.js"></script>
+<script src="~/js/basicChatHub.js"></script>

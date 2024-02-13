@@ -45,5 +45,6 @@ app.MapHub<UserHub>("/hubs/userCount");
 app.MapHub<VoteHub>("/hubs/voteHub");
 app.MapHub<SubscriptionGroupHub>("/hubs/subscriptionGroupHub");
 app.MapHub<NotificationHub>("/hubs/notificationHub");
+app.MapHub<BasicChatHub>("/hubs/basicChatHub");
 
 app.Run();
